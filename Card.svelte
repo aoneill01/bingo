@@ -7,7 +7,7 @@
 <style>
   .card {
     background-color: #6b705c;
-    width: 75px;
+    width: 80px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding: 5px;

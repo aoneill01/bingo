@@ -20,7 +20,7 @@
     }
   }
 
-  async function refresh() {
+  async function replay() {
     complete = false;
     boards = parseInput().boards;
     await new Promise(r => setTimeout(r, 1500));
@@ -33,6 +33,11 @@
 <style>
   :global(body) {
     background-color: #ddbea9;
+    margin: 16px;
+  }
+
+  :global(*) {
+    box-sizing: border-box;
   }
 
   main {
@@ -44,6 +49,7 @@
     display: inline-grid;
     grid-template-columns: repeat(10, auto);
     gap: 8px;
+    margin: 16px;
   }
 
   a,
@@ -59,10 +65,10 @@
     {/each}
   </div>
   
-  <div>
+  <footer>
     <a href="https://github.com/aoneill01/bingo">repository</a><br />
     {#if complete}
-      <a href={'#'} on:click={refresh}>refresh</a>
+      <a href={'#'} on:click={replay}>replay</a>
     {/if}
-  </div>
+  </footer>
 </main>
