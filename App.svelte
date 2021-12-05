@@ -50,6 +50,8 @@
     grid-template-columns: repeat(10, auto);
     gap: 8px;
     margin: 16px;
+    background: url(/squid.svg) center no-repeat;
+    background-size: contain;
   }
 
   a,
